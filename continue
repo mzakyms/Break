@@ -1,0 +1,57 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+struct Menu{
+	string name;
+	string package;
+	string flavor;
+};
+
+int main(){
+	Menu menu[] = {
+		{
+			"milk shake",
+			"creamy regal",
+			"cool",
+		},
+		{
+			"milk shake",
+			"milo",
+			"cool",
+		},
+		{
+			"thai tea",
+			"original",
+			"cool",
+		},
+		{
+			"thai tea",
+			"green tea",
+			"cool",
+		},
+		{
+			"thai tea",
+			"regal milky",
+			"cool",
+		},
+		{
+			"milk shake",
+			"chocolate",
+			"cool",
+		},
+	};
+	
+	int spicymenu = 3;
+	
+	cout << "What menu contains ?\n\n";
+	
+	for (int i = 0; i < 6; i++){
+		if (menu[i].flavor == "Flavor"){
+			break;
+		}
+		cout << menu[i].name << endl;
+	}
+	
+	return 0;
+}
